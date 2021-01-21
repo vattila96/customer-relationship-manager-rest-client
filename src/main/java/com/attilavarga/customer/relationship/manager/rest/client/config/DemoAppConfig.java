@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.config;
+package com.attilavarga.customer.relationship.manager.rest.client.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,31 +13,23 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.luv2code.springdemo")
+@ComponentScan("com.attilavarga.customer.relationship.manager.rest.client")
 @PropertySource({ "classpath:application.properties" })
 public class DemoAppConfig implements WebMvcConfigurer {
 
-	// define a bean for ViewResolver
-
 	@Bean
 	public ViewResolver viewResolver() {
-		
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-		
 		viewResolver.setPrefix("/WEB-INF/view/");
 		viewResolver.setSuffix(".jsp");
 		
 		return viewResolver;
 	}
 	
-	// define bean for RestTemplate ... this is used to make client REST calls
-	
 	@Bean
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
-	
-	// add resource handler for loading css, images, etc
 	
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -46,12 +38,3 @@ public class DemoAppConfig implements WebMvcConfigurer {
           .addResourceLocations("/resources/"); 
     }	
 }
-
-
-
-
-
-
-
-
-

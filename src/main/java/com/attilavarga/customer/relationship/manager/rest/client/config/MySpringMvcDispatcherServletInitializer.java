@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.config;
+package com.attilavarga.customer.relationship.manager.rest.client.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -6,7 +6,6 @@ public class MySpringMvcDispatcherServletInitializer extends AbstractAnnotationC
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -19,11 +18,4 @@ public class MySpringMvcDispatcherServletInitializer extends AbstractAnnotationC
 	protected String[] getServletMappings() {
 		return new String[] { "/" };
 	}
-
 }
-
-
-
-
-
-

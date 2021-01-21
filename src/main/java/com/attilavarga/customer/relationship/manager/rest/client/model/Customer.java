@@ -1,18 +1,11 @@
-package com.luv2code.springdemo.model;
+package com.attilavarga.customer.relationship.manager.rest.client.model;
 
 public class Customer {
-
 	private int id;
-	
-	private String firstName;
-	
+	private String firstName;	
 	private String lastName;
-	
 	private String email;
-	
-	public Customer() {
-		
-	}
+	public Customer() {}
 
 	public int getId() {
 		return id;
@@ -49,11 +42,5 @@ public class Customer {
 	@Override
 	public String toString() {
 		return "Customer [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
-	}
-		
+	}		
 }
-
-
-
-
-
