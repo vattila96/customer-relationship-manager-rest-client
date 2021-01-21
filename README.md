@@ -1,4 +1,4 @@
-# customer-relationship-manager-rest-client
+# Customer relationship manager REST client
 
 A rest client for the Customer relationship manager REST API. 
 
